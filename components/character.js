@@ -23,7 +23,7 @@ const Character = ({ image, name, status, species, location, episode }) => {
     const statusClassName = status === 'Dead' ? 'bg-red-500' : status === 'Alive' ? 'bg-green-500' : 'bg-gray-500';
 
     return <div className="rounded-lg flex flex-col sm:flex-row w-[600px] h-[480px] sm:h-[220px] bg-[#3C3E44] text-white  text-[16px]">
-        <img src={image} className="h-[50%] sm:h-full rounded-t-lg sm:rounded-l-lg" />
+        <img src={image} className="h-[50%] sm:h-full rounded-t-lg sm:rounded-l-lg sm:rounded-tr-none" />
         <div className="h-full w-full sm:w-[60%] py-4 px-4 flex flex-col justify-between items-start">
             <div className="gap-2 flex flex-col items-start">
                 <h1 className="text-[24px] font-extrabold text-left hover:cursor-pointer hover:text-[#FF9800]">{name}</h1>
